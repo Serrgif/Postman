@@ -18,8 +18,8 @@ public class PostmanTestV1 {
                 .post("/post")
 
         .then()
-                .statusCode(200)
-                .body("data", equalTo("wrong data"))
+                .statusCode(100)
+                .body("data", equalTo("some data"))
         ;
     }
 }
